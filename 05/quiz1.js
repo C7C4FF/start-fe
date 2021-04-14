@@ -1,4 +1,4 @@
-var todayPhoto = [
+const todayPhoto = [
     {"url":"http://media.daum.net/photo/2841","img":"http://icon.daumcdn.net/w/c/12/05/82877085750988319.jpeg","title":"&quot;뜨면 끝장&quot; 최강 공격헬기 성능이 설마","id":"20120516082207657"}
     ,{"url":"http://media.daum.net/entertain/photo/gallery/?gid=100320","img":"http://icon.daumcdn.net/w/c/12/05/82876693901189319.jpeg","title":"&#39;오늘만&#39; 필리핀 새댁 5개국어 능통 엄친딸","id":"20120516091011626"}
     ,{"url":"http://media.daum.net/photo/4010","img":"http://icon.daumcdn.net/w/c/12/05/82876307459008319.jpeg","title":"[북한 결혼식 풍경] 신랑·신부 &quot;행복합니다&quot;","id":"20120516092605081"}
@@ -13,11 +13,11 @@ var page = 1;
 var listNum = 3;
 var totalPage = Math.ceil(todayPhoto.length / listNum);
 
-var $wrap = document.getElementById('wrap');
-var $btnPrev = document.querySelector('.btn1');
-var $btnNext = document.querySelector('.btn2');
-var $page = document.querySelector('.page');
-var $totalpage = document.querySelector('.total-page');
+const $wrap = document.getElementById('wrap');
+const $btnPrev = document.querySelector('.btn1');
+const $btnNext = document.querySelector('.btn2');
+const $page = document.querySelector('.page');
+const $totalpage = document.querySelector('.total-page');
 
 function prev(){
     if (page === 1) return;
@@ -52,7 +52,8 @@ function printImg(page){
     var str = '';
     for(var i = startIndex; i < startIndex + listNum; i++){
         if(todayPhoto[i]){
-            str += '<img src="'+todayPhoto[i].img+'"> ';
+            // str += '<img src="'+todayPhoto[i].img+'"> ';
+            str += `<img src="${todayPhoto[i].img}">`;
         }
     }
     
