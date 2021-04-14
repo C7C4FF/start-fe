@@ -43,9 +43,10 @@ const newArr = arr.map((item) =>{
 
 // document.getElementById('box').addEventListener('click', (event) => console.log(1));
 
-function sum(x, y, z) {
-    return x + y + z;
-  }
-  const numbers = [1, 2, 3];
-  console.log(sum(...numbers));
-  console.log(sum(1, 2, 3));
+// function sum(x, y, z) {
+//     return x + y + z;
+// }
+// const numbers = [1, 2, 3];
+// console.log(sum(...numbers));
+// console.log(sum(1, 2, 3));
+
