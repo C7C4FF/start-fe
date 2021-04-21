@@ -25,7 +25,6 @@ document.body.addEventListener('mousemove', (event) => {
   $box.style.top = event.clientY + offset.y;
 });
 
-
 /*
 
 var box = document.getElementById('box');

@@ -1,9 +1,8 @@
 var link = document.querySelector('#link');
-link.addEventListener('click', function (){
-    console.log(111111);
-    event.preventDefault();
+link.addEventListener('click', function () {
+  console.log(111111);
+  event.preventDefault();
 });
-
 
 // var list = document.querySelector('#list');
 // console.log(list.children);
@@ -21,8 +20,6 @@ link.addEventListener('click', function (){
 //     console.log('body');
 // });
 
-
-
 // debugger 개발자도구가 있으면 이 라인에서 멈춤
 
 // for (var i=0; i<list.children.length; i++){
@@ -37,7 +34,6 @@ link.addEventListener('click', function (){
 //     console.log(++clickCount);
 //     console.log(arguments, event ,event.type,event.currentTarget);
 // }
-
 
 // console.log(window.outerWidth);
 // console.log(window.name);
@@ -55,23 +51,21 @@ link.addEventListener('click', function (){
 // console.log(box);
 // console.log(box2);
 
-
 // var div = document.createElement('div');
 // console.log(div);
 // div.style.border = '1px solid #000';
 // div.innerHTML = "Hello!";
 
-
 // document.body 는 document.querySelector('body') 와 동일
 // document.body.appendChild(div);
 
 // const span = document.createElement('span');
-// const textNode = document.createTextNode('hello!'); 
+// const textNode = document.createTextNode('hello!');
 // span.appendChild(textNode);
 // document.querySelector('#debug').appendChild(span);
 
 // var debug = document.getElementById('debug');
 // debug.remove();
 
-// const list = document.getElementById('list'); 
+// const list = document.getElementById('list');
 // list.removeChild(list.children[0]);

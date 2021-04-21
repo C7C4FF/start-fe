@@ -8,7 +8,6 @@ let life = 10;
 let timerId = 0;
 let timer2 = 0;
 
-
 function getRandom(max) {
   return Math.floor(Math.random() * max);
 }
@@ -20,6 +19,31 @@ function bug() {
 
   $bug.style.left = `${x}px`;
   $bug.style.top = `${y}px`;
+}
+
+function end() {
+  alert('end!');
+  $bug.style.display = 'none';
+  clearInterval(timerId);
+  event.stopPropagation();
+}
+
+function wrong() {
+  life -= 1;
+  $life.innerHTML = life;
+  setTimeout(() => {
+    if (life === 0) {
+      end();
+    }
+  }, 0);
+}
+
+function miss() {
+  if (life !== 0) {
+    if ($bug.style.display === 'block') {
+      wrong();
+    }
+  }
 }
 
 function start() {
@@ -35,33 +59,6 @@ function hit(event) {
   $bug.style.display = 'none';
   start();
   event.stopPropagation();
-}
-
-function end(){
-    alert('end!');
-    $bug.style.display = 'none';
-    clearInterval(timerId);
-    event.stopPropagation();
-}
-
-function wrong() {
-  life -= 1;
-  $life.innerHTML = life;
-  setTimeout(() => {
-    if (life === 0) {
-      end();
-    }
-  }, 0);
-};
-
-function miss(){
-    if (life != 0){
-        if ($bug.style.display === 'block'){
-            wrong();
-        }
-    }
-
-    
 }
 
 start();

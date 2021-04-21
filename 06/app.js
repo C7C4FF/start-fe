@@ -22,7 +22,6 @@
 
 // const arr = [1, 2, 3];
 
-
 /* 1 function 사용
 const newArr = arr.map(function (item){
     return item + 1;
@@ -49,4 +48,3 @@ const newArr = arr.map((item) =>{
 // const numbers = [1, 2, 3];
 // console.log(sum(...numbers));
 // console.log(sum(1, 2, 3));
-

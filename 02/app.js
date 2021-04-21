@@ -1,4 +1,4 @@
-console.log("app");
+console.log('app');
 
 // Create
 var todos = ['운동'];
@@ -9,8 +9,8 @@ console.log(todos);
 
 // Read
 
-todos.forEach(function(todo) {
-    console.log(todo);
+todos.forEach(function (todo) {
+  console.log(todo);
 });
 
 // Update
@@ -23,7 +23,6 @@ todos.forEach(function(todo) {
 // todos[updateIndex] = '공부';
 // console.log(todos);
 
-
 // Delete
 
 // var todos = ['운동', '공부', '목욕'];
@@ -34,14 +33,12 @@ todos.forEach(function(todo) {
 // todos.splice(deleteIndex, 1);
 // console.log(todos);
 
-
 // if 문
 
 // var isMan = true;
 // if (isMan){
 //     console.log('1');
 // } else if (!isMan && isHero){
-
 
 // }
 // else {
