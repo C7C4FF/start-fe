@@ -11,4 +11,4 @@ promise.then((res) => {
 
 funtion callback(data){
     console.log('callback:', data);
-}
+};
